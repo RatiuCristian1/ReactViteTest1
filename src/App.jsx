@@ -43,9 +43,11 @@ export default function App() {
     })
   }
 
-  return <>
-    <NewTododsForm onSubmit={addTodo} />
-    <h1 className='header'>Todo List</h1>
-    <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodods={deleteTodods} />
-    </>
+  return ( 
+    <div className='container'>
+      <NewTododsForm onSubmit={addTodo} />
+      <h1 className='header'>Todo List</h1>
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodods={deleteTodods} />
+    </div>
+  )
 }

@@ -7,7 +7,7 @@ export default function TodoItem({ completed, id, title, toggleTodo, deleteTodod
                 <input 
                     type="checkbox"
                     checked={completed}
-                 onChange={e => toggleTodo(id, e.target.checked)} 
+                    onChange={e => toggleTodo(id, e.target.checked)} 
                />
                {title}
             </label>

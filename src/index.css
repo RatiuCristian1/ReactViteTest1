@@ -1,6 +1,7 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Chela One', 'cursive';
   box-sizing: border-box;
+  color: #333;
 }
 
 body {
@@ -9,6 +10,26 @@ body {
   max-width: 400px;
   padding: 1rem;
   margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  height: 80vh;
+  background-image: url('Untitled design.png');
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.item--header {
+  text-align: center;
+  margin: 3em auto 1em;
+  font-family: 'Chela One', 'cursive';
+  font-size: 2rem;
+  text-decoration-color: fuchsia;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+
 }
 
 .new-item-form {
@@ -23,19 +44,32 @@ body {
   gap: 0.1rem;
 }
 
+#item {
+  margin: 0 2em;
+  padding: 0.80em;
+}
+
 .btn {
   background: hsl(200, 100%, 50%, 0.1);
   border: 1px solid hsl(200, 100%, 50%);
-  color: hsl(200, 100%, 50%);
-  padding: 0.25em 0.5em;
+  color: hsl(290, 92%, 48%);
+  padding: 0.80em;
   border-radius: 0.25em;
   cursor: pointer;
   outline: none;
+  margin: 0 1.7em;
+  font-size: 1rem;
+  box-shadow: 0 3px 0 hsla(200, 97%, 29%, 0.1);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(3px);
 }
 
 .btn:hover,
 .btn:focus-visible {
-  background: hsl(200, 100%, 50%, 0.2);
+  background: hsla(200, 96%, 22%, 0.2);
 }
 
 .btn.btn-danger {
@@ -66,12 +100,13 @@ body {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  margin-left: 1.2em;
 }
 
 .list {
   margin: 0;
   padding: 0;
-  margin-left: 1rem;
+  margin-left: 1.9rem;
   list-style: none;
 }
 
